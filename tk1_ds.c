@@ -47,7 +47,6 @@ int main() {
   } while (option != 4);
 
   popAll();
-  
   return 0;
 }
 
@@ -63,7 +62,6 @@ void menu() {
   printf("3. Take Product\n");
   printf("4. Exit\n");
   printf("\n\n >> Input menu: ");
-
 }
 
 void view() {
@@ -110,11 +108,13 @@ void pop() {
       free(curr);
 
       if (head != NULL) head->prev = NULL;
+
     } else if (curr == tail) {
       curr = tail;
       tail = tail->prev;
       free(curr);
       tail->next = NULL;
+      
     } else {
       temp = head;
 
