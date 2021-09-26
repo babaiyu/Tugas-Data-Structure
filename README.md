@@ -3,10 +3,10 @@ All my task from lecture, i saved here. U can use that if u fyucking need
 
 ### Build file at Linux / Unix system
 ```
-gcc ./name-file.c
+gcc ./name-file.c -o name_output
 ```
 
 ### Running output build
 ```
-./name-file.out
+./name_output
 ```
